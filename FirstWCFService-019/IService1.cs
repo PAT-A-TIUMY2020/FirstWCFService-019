@@ -12,14 +12,17 @@ namespace FirstWCFService_019
     [ServiceContract]
     public interface IService1
     {
+        [OperationContract]
+        double add(double num1, double num2);
 
         [OperationContract]
-        string GetData(int value);
+        double Sub(double num1, double num2);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        double Multipli(double num1, double num2);
 
-        // TODO: Add your service operations here
+        [OperationContract]
+        double Divide(double num1, double num2);
     }
 
 
